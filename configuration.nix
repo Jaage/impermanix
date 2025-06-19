@@ -133,6 +133,7 @@
     eza
     fastfetch
     fzf
+    ripgrep
     starship
     stow
     zoxide
