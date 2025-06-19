@@ -138,7 +138,11 @@
     stow
     zoxide
 
+    # Formatters
+    nixfmt-rfc-style
+
     # Programs
+    discord
     git
     inputs.nixvim.packages.x86_64-linux.default
     solaar
