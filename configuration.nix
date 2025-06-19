@@ -1,4 +1,10 @@
-{ inputs, config, lib, pkgs, ... }:
+{
+  inputs,
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   imports = [
@@ -34,11 +40,11 @@
     description = "Rollback ZFS datasets to a blank snapshot taken immediately after disko formatting.";
     wantedBy = [
       "initrd.target"
-    ]; 
+    ];
     after = [
       "zfs-import-zroot.service"
     ];
-    before = [ 
+    before = [
       "sysroot.mount"
     ];
     path = with pkgs; [
@@ -143,7 +149,6 @@
 
     # Programs
     discord
-    git
     inputs.nixvim.packages.x86_64-linux.default
     solaar
     tofi
@@ -153,6 +158,14 @@
     # Terminal
     ghostty
   ];
+
+  programs.git = {
+    enable = true;
+    config = {
+      credential.helper = "libsecret";
+    };
+    package = pkgs.git.override { withLibsecret = true; };
+  };
 
   programs.steam = {
     enable = true;
@@ -165,12 +178,13 @@
   programs.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
-    portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
+    portalPackage =
+      inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
 
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  users.extraUsers.jjh. shell = pkgs.zsh;
+  users.extraUsers.jjh.shell = pkgs.zsh;
 
   system.stateVersion = "25.11";
 }
