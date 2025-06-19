@@ -99,6 +99,10 @@
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
 
+  # Configure keymap in X11
+  services.xserver.xkb.layout = "us";
+  services.xserver.xkb.variant = "";
+
   # Enable sound.
   services.pipewire = {
     enable = true;
