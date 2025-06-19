@@ -167,6 +167,7 @@
     };
     package = pkgs.git.override { withLibsecret = true; };
   };
+  programs.seahorse.enable = true;
 
   programs.steam = {
     enable = true;
