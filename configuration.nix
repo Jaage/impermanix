@@ -125,6 +125,7 @@
     firefox
 
     # CLI
+    eza
     fastfetch
     fzf
     starship
