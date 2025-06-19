@@ -163,12 +163,7 @@
 
   programs.git = {
     enable = true;
-    config = {
-      credential.helper = "libsecret";
-    };
-    package = pkgs.gitFull;
   };
-  programs.seahorse.enable = true;
 
   programs.steam = {
     enable = true;
