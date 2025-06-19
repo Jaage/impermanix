@@ -161,6 +161,7 @@
 
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
+  users.extraUsers.jjh. shell = pkgs.zsh;
 
   system.stateVersion = "25.11";
 }
