@@ -114,12 +114,16 @@
     hashedPasswordFile = "/persist/passwords/jjh";
   };
 
+  programs.direnv.enable = true;
+
   environment.systemPackages = with pkgs; [
     # Browser
     firefox
 
     # CLI
     fastfetch
+    fzf
+    starship
     stow
     zoxide
 
