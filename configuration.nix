@@ -165,7 +165,7 @@
     config = {
       credential.helper = "libsecret";
     };
-    package = pkgs.git.override { withLibsecret = true; };
+    package = pkgs.gitFull;
   };
   programs.seahorse.enable = true;
 
