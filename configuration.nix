@@ -22,6 +22,12 @@
     trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
   };
 
+  nix.gc = {
+    automatic = true;
+    options = "--delete-older-than 30d";
+  };
+  nix.settings.auto-optimise-store = true;
+
   # Impermanence
   boot.initrd.systemd.enable = true;
   boot.initrd.systemd.services.rollback = {
@@ -53,14 +59,7 @@
       "/var/log/journal/df374d06639f492eb6ab076160488b26"
     ];
     files = [
-#      "/etc/group"
-      # "/etc/gshadow"
       "/etc/machine-id"
-#      "/etc/passwd"
-     # "/etc/shadow"
-#      "/etc/subgid"
-#      "/etc/subuid"
-#      "/etc/zfs/zpool.cache"
     ];
   };
   environment.etc = {
