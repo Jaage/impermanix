@@ -103,6 +103,11 @@
   services.xserver.xkb.layout = "us";
   services.xserver.xkb.variant = "";
 
+  # Security
+  security = {
+    rtkit.enable = true;
+  };
+
   # Enable sound.
   services.pipewire = {
     enable = true;
