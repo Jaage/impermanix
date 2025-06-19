@@ -142,6 +142,7 @@
     ripgrep
     starship
     stow
+    wl-clipboard
     zoxide
 
     # Formatters
