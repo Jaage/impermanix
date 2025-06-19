@@ -134,12 +134,12 @@
     zoxide
 
     # Programs
-    fuzzel
     git
     inputs.nixvim.packages.x86_64-linux.default
     solaar
     tofi
     vim
+    walker
 
     # Terminal
     ghostty
