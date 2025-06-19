@@ -9,6 +9,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_6_14;
+  boot.kernelParams = [ "nvidia-drm.modeset=1" ];
 
   # Flakes
   nix.settings = {
