@@ -82,6 +82,8 @@
 
   time.timeZone = "America/Los_Angeles";
 
+  i18n.defaultLocale = "en_US.UTF-8";
+
   nixpkgs.config = {
     allowUnfree = true;
   };
@@ -97,6 +99,14 @@
   hardware.logitech.wireless.enable = true;
   hardware.logitech.wireless.enableGraphical = true;
 
+  # Enable sound.
+  services.pipewire = {
+    enable = true;
+    alsa.enable = true;
+    alsa.support32Bit = true;
+    pulse.enable = true;
+  };
+
   users.users.jjh = {
     isNormalUser = true;
     extraGroups = [ "wheel" ];
@@ -107,6 +117,11 @@
   environment.systemPackages = with pkgs; [
     # Browser
     firefox
+
+    # CLI
+    fastfetch
+    stow
+    zoxide
 
     # Programs
     fuzzel
@@ -120,11 +135,22 @@
     ghostty
   ];
 
+  programs.steam = {
+    enable = true;
+    gamescopeSession.enable = true;
+    remotePlay.openFirewall = true;
+    dedicatedServer.openFirewall = true;
+  };
+  programs.gamemode.enable = true;
+
   programs.hyprland = {
     enable = true;
     package = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.hyprland;
     portalPackage = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system}.xdg-desktop-portal-hyprland;
   };
+
+  programs.zsh.enable = true;
+  users.defaultUserShell = pkgs.zsh;
 
   system.stateVersion = "25.11";
 }
