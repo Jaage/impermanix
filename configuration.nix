@@ -122,11 +122,16 @@
     pulse.enable = true;
   };
 
-  users.users.jjh = {
-    isNormalUser = true;
-    extraGroups = [ "wheel" ];
-    # Create passwd with: sudo mkpasswd -m sha-512 "passwd_here" > /mnt/persist/passwords/user during installation
-    hashedPasswordFile = "/persist/passwords/jjh";
+  users = {
+    mutableUsers = false;
+    users = {
+      jjh = {
+        isNormalUser = true;
+        extraGroups = [ "wheel" ];
+        # Create passwd with: sudo mkpasswd -m sha-512 "passwd_here" > /mnt/persist/passwords/user during installation
+        hashedPasswordFile = "/persist/passwords/jjh";
+      };
+    };
   };
 
   programs.direnv.enable = true;
