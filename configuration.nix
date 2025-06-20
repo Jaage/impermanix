@@ -66,6 +66,7 @@
     ];
     files = [
       "/etc/machine-id"
+      "/etc/zfs/zpool.cache"
     ];
   };
   environment.etc = {
