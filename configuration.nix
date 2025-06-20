@@ -69,12 +69,12 @@
     ];
   };
   environment.etc = {
-    group.source = "/persist/etc/group";
-    gshadow.source = "/persist/etc/gshadow";
-    passwd.source = "/persist/etc/passwd";
-    shadow.source = "/persist/etc/shadow";
-    subgid.source = "/persist/etc/subgid";
-    subuid.source = "/persist/etc/subuid";
+    # group.source = "/persist/etc/group";
+    # gshadow.source = "/persist/etc/gshadow";
+    # passwd.source = "/persist/etc/passwd";
+    # shadow.source = "/persist/etc/shadow";
+    # subgid.source = "/persist/etc/subgid";
+    # subuid.source = "/persist/etc/subuid";
     "zfs/zpool.cache".source = "/persist/etc/zfs/zpool.cache";
   };
   security.sudo.extraConfig = ''
@@ -186,7 +186,6 @@
 
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  users.users.jjh.shell = pkgs.zsh;
 
   system.stateVersion = "25.11";
 }
