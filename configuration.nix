@@ -16,6 +16,7 @@
   boot.loader.efi.canTouchEfiVariables = true;
   boot.kernelPackages = pkgs.linuxPackages_6_14;
   # boot.kernelParams = [ "nvidia-drm.modeset=1" ];
+  systemd.enableEmergencyMode = false;
 
   # Flakes
   nix.settings = {
@@ -124,7 +125,7 @@
   };
 
   users = {
-    mutableUsers = false;
+    mutableUsers = false; # Needed for impermanece.
     users = {
       jjh = {
         isNormalUser = true;
@@ -144,6 +145,7 @@
     # CLI
     eza
     fastfetch
+    fd
     fzf
     ripgrep
     starship
