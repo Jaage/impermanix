@@ -150,7 +150,6 @@
 
     # Programs
     discord
-    gnome-keyring
     inputs.nixvim.packages.x86_64-linux.default
     solaar
     tofi
@@ -182,7 +181,6 @@
 
   programs.zsh.enable = true;
   users.defaultUserShell = pkgs.zsh;
-  users.extraUsers.jjh.shell = pkgs.zsh;
 
   system.stateVersion = "25.11";
 }
