@@ -152,6 +152,7 @@
     ripgrep
     starship
     stow
+    unzip
     wl-clipboard
     zoxide
 
