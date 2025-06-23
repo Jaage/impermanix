@@ -148,6 +148,7 @@
     fd
     fzf
     jq
+    pigz
     ripgrep
     starship
     stow
