@@ -147,6 +147,7 @@
     fastfetch
     fd
     fzf
+    jq
     ripgrep
     starship
     stow
