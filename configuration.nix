@@ -111,6 +111,7 @@
   services.xserver.xkb.layout = "us";
   services.xserver.xkb.variant = "";
   # Wooting keyboard detection
+  hardware.wooting.enable = true;
   services.udev.extraRules = ''
     # Wooting One Legacy
     SUBSYSTEM=="hidraw", ATTRS{idVendor}=="03eb", ATTRS{idProduct}=="ff01", TAG+="uaccess"
