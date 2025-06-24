@@ -166,6 +166,7 @@
     tofi
     vim
     walker
+    wootility
 
     # Terminal
     ghostty
