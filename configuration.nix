@@ -70,15 +70,6 @@
       "/etc/zfs/zpool.cache"
     ];
   };
-  environment.etc = {
-    # group.source = "/persist/etc/group";
-    # gshadow.source = "/persist/etc/gshadow";
-    # passwd.source = "/persist/etc/passwd";
-    # shadow.source = "/persist/etc/shadow";
-    # subgid.source = "/persist/etc/subgid";
-    # subuid.source = "/persist/etc/subuid";
-    # "zfs/zpool.cache".source = "/persist/etc/zfs/zpool.cache";
-  };
   security.sudo.extraConfig = ''
     # Don't display sudo lecture after rollback on reboot
     Defaults lecture = never
