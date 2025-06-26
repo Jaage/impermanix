@@ -177,6 +177,10 @@
     dedicatedServer.openFirewall = true;
   };
   programs.gamemode.enable = true;
+  programs.gamescope = {
+    enable = true;
+    capSysNice = true;
+  };
 
   programs.hyprland = {
     enable = true;
