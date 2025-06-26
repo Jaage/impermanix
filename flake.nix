@@ -2,7 +2,8 @@
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
     impermanence.url = "github:nix-community/impermanence";
-    hyprland.url = "github:hyprwm/Hyprland";
+    hyprland.url = "git+https://github.com/hyprwm/Hyprland?submodules=1";
+    # hyprland.url = "github:hyprwm/Hyprland";
     nixvim.url = "github:Jaage/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
   };
