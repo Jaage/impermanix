@@ -141,6 +141,7 @@
     fd
     fzf
     jq
+    nh
     pigz
     ripgrep
     starship
