@@ -18,6 +18,12 @@
   # boot.kernelParams = [ "nvidia-drm.modeset=1" ];
   systemd.enableEmergencyMode = false;
 
+  # Variables
+  environment.variables = {
+    WINEARCH = "win64";
+    WINEPREFIX = "$HOME/.wine-battlenet";
+  };
+
   # Flakes
   nix.settings = {
     experimental-features = [
