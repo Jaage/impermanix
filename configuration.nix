@@ -157,6 +157,7 @@
     discord
     gamescope-wsi # Needed for gamescope HDR
     inputs.nixvim.packages.x86_64-linux.default
+    lutris
     solaar
     tofi
     vim
