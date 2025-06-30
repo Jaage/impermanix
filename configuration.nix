@@ -165,6 +165,7 @@
     tofi
     vim
     walker
+    winetricks
     wootility
 
     # Terminal
