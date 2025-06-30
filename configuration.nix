@@ -87,7 +87,10 @@
     allowUnfree = true;
   };
 
-  hardware.graphics.enable = true;
+  hardware.graphics = {
+    enable = true;
+    enable32Bit = true;
+  };
   hardware.nvidia = {
     open = true;
     package = config.boot.kernelPackages.nvidiaPackages.beta;
