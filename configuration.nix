@@ -35,10 +35,16 @@
     trusted-public-keys = [ "hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc=" ];
   };
 
-  nix.gc = {
-    automatic = true;
-    options = "--delete-older-than 30d";
+  programs.nh = {
+    enable = true;
+    clean.enable = true;
+    clean.extraArgs = "--keep-since 7d --keep 3";
+    flake = "/etc/nixos";
   };
+  # nix.gc = {
+  #   automatic = true;
+  #   options = "--delete-older-than 30d";
+  # };
   nix.settings.auto-optimise-store = true;
 
   # Impermanence
@@ -151,7 +157,6 @@
     fio
     fzf
     jq
-    nh
     pigz
     ripgrep
     starship
