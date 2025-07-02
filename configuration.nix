@@ -17,10 +17,6 @@
   systemd.enableEmergencyMode = false;
 
   # Variables
-  environment.variables = {
-    WINEARCH = "win64";
-    WINEPREFIX = "$HOME/.wine-battlenet";
-  };
 
   # Flakes
   nix.settings = {
