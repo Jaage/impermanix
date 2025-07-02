@@ -148,6 +148,7 @@
     eza
     fastfetch
     fd
+    fio
     fzf
     jq
     nh
