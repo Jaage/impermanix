@@ -148,7 +148,6 @@
     fio
     fzf
     jq
-    p7zip
     pigz
     ripgrep
     starship
