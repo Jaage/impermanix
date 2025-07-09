@@ -157,6 +157,9 @@
     wl-clipboard
     zoxide
 
+    # Fonts
+    _0xproto
+
     # Formatters
     nixfmt-rfc-style
 
