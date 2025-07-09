@@ -157,9 +157,6 @@
     wl-clipboard
     zoxide
 
-    # Fonts
-    _0xproto
-
     # Formatters
     nixfmt-rfc-style
 
@@ -175,6 +172,9 @@
 
     # Terminal
     ghostty
+  ];
+  fonts.packages = with pkgs; [
+    nerd-fonts._0xproto
   ];
 
   programs.git = {
