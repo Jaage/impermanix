@@ -169,6 +169,7 @@
     vim
     walker
     wootility
+    wowup-cf
 
     # Terminal
     ghostty
