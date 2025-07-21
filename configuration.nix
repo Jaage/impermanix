@@ -161,11 +161,11 @@
     nixfmt-rfc-style
 
     # Programs
+    bolt-launcher
     discord
     gamescope-wsi # Needed for gamescope HDR
     inputs.nixvim.packages.x86_64-linux.default
     lutris
-    runelite
     solaar
     vim
     walker
