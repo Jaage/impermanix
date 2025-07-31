@@ -145,6 +145,7 @@
     eza
     fastfetch
     fd
+    file
     fio
     fzf
     jq
