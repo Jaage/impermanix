@@ -438,11 +438,11 @@
         "nixpkgs": "nixpkgs_2"
       },
       "locked": {
-        "lastModified": 1754005074,
-        "narHash": "sha256-HE6cdVjwNsXGIpQRjoie4g9IGM55SywKKhjzb5lAwo4=",
+        "lastModified": 1754005840,
+        "narHash": "sha256-Kx6z+rX/0FSCtaI771NFeHlfRrEHQso54FRe4oaal7M=",
         "owner": "Jaage",
         "repo": "nix-fonts",
-        "rev": "92b53ccc9f8cb6b5ce41414a332ebfa74134af75",
+        "rev": "573c7c743696edbfac14e503e8b9f16f91fddb96",
         "type": "github"
       },
       "original": {
