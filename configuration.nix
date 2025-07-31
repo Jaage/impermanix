@@ -176,7 +176,7 @@
     ghostty
   ];
   fonts.packages = with pkgs; [
-    inputs.nix-fonts.packages.x86_64-linux.runescape
+    inputs.nix-fonts.defaultPackage.x86_64-linux
     nerd-fonts._0xproto
     terminus_font
   ];
