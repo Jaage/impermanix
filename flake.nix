@@ -6,6 +6,7 @@
     hyprland.url = "github:hyprwm/Hyprland";
     nixvim.url = "github:Jaage/nixvim";
     nixvim.inputs.nixpkgs.follows = "nixpkgs";
+    nix-fonts.url = "github:Jaage/nix-fonts";
   };
   outputs =
     inputs@{ self, nixpkgs, ... }:

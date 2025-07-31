@@ -176,6 +176,7 @@
     ghostty
   ];
   fonts.packages = with pkgs; [
+    # inputs.nix-fonts.defaultPackage
     nerd-fonts._0xproto
     terminus_font
   ];
